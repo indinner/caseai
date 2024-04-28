@@ -6,13 +6,16 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "electron_build": "electron-packager ./dist --platform=win32 --arch=x64 --overwrite"
   },
   "dependencies": {
     "vue": "^3.4.21"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
+    "electron": "^30.0.1",
+    "electron-packager": "^17.1.2",
     "vite": "^5.2.8"
   }
 }
